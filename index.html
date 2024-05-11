@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UV100</title>
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="uv100.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <div class="bannerContainer">
@@ -39,7 +39,7 @@
         </a>
       </li>
       <li>
-        <a href="uv200.html">
+        <a href="">
           <span>回收做公益</span>
         </a>
       </li>
@@ -49,10 +49,10 @@
     <img id="displayedImage" src="img/AP240208_01.webp" alt="圖片讀取中">
   </div>
   <div id="description">
-    <p>會員權益適用於UV100商店服務（亦即UV100網站（www.uv100.com）及後續成立之網站、全台門市通路，以下稱「本服務」）
+    <p>會員權益適用於商店服務及後續成立之網站、全台門市通路，以下稱「本服務」）
     </p>
     <p>
-      是由莨仕國際有限公司（以下稱「本公司」）所經營。
+      國際有限公司（以下稱「本公司」）所經營。
     </p>
     <p>本公司將根據以下之會員服務條款(以下簡稱本條款)，提供會員便利的交易。
     </p>
@@ -61,34 +61,6 @@
     </p>
     </div>
 </section>
-<script>
-  function changeImage(imageSrc, link) {
-    const images = document.querySelectorAll('.nav a');
-
-    for (var i = 0; i < images.length; i++) {
-      images[i].classList.remove('active'); 
-    }
-    link.classList.add('active'); 
-    document.getElementById('displayedImage').src = imageSrc; 
-
-    document.getElementById('displayedImage').style.display = 'block';
-
-    document.getElementById('description').style.display = 'none';
-  }
-
-  function showDescription(link) {
-    const images = document.querySelectorAll('.nav a');
-
-    for (var i = 0; i < images.length; i++) {
-      images[i].classList.remove('active'); 
-    }
-    link.classList.add('active');
-
-    const description = document.getElementById('description');
-    description.style.display = 'block'; 
-
-    document.getElementById('displayedImage').style.display = 'none';
-  }
-</script>
+<script src="func01.js"></script>
 </body>
 </html>

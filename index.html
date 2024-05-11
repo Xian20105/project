@@ -3,9 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>UV100</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="uv100.css">
 </head>
 <body>
-  hello
+  <div class="bannerContainer">
+    <div class="textBox">
+      <div class="text">
+        <H1>
+          <span class="textA">MEMBER'S EVENT</span>
+        </H1>
+        <H2>
+          <span class="textB">會員互動</span>
+        </H2>
+      </div>
+    </div>
+</div>
+<section class="panels">
+  <div class="sectionContainer">
+    <ul class="nav">
+      <li>
+        <a href="#" class="active"onclick="changeImage('img/AP240208_01.webp', this)">
+          <span>會員獨享</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" onclick="changeImage('img/AP231209_01.webp', this)">
+          <span>桌曆兌換</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" onclick="showDescription(this)">
+          <span>會員權益說明</span>
+        </a>
+      </li>
+      <li>
+        <a href="uv200.html">
+          <span>回收做公益</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="photoContainer">
+    <img id="displayedImage" src="img/AP240208_01.webp" alt="圖片讀取中">
+  </div>
+  <div id="description">
+    <p>會員權益適用於UV100商店服務（亦即UV100網站（www.uv100.com）及後續成立之網站、全台門市通路，以下稱「本服務」）
+    </p>
+    <p>
+      是由莨仕國際有限公司（以下稱「本公司」）所經營。
+    </p>
+    <p>本公司將根據以下之會員服務條款(以下簡稱本條款)，提供會員便利的交易。
+    </p>
+    <p>
+      為了保障您的權益，請務必詳讀本條款，在您註冊成為會員或開始使用本服務時，即視為您已經閱讀、瞭解並同意接受本條款及「隱私權政策」、「網站使用條款」之所有內容，
+    </p>
+    </div>
+</section>
+<script>
+  function changeImage(imageSrc, link) {
+    const images = document.querySelectorAll('.nav a');
+
+    for (var i = 0; i < images.length; i++) {
+      images[i].classList.remove('active'); 
+    }
+    link.classList.add('active'); 
+    document.getElementById('displayedImage').src = imageSrc; 
+
+    document.getElementById('displayedImage').style.display = 'block';
+
+    document.getElementById('description').style.display = 'none';
+  }
+
+  function showDescription(link) {
+    const images = document.querySelectorAll('.nav a');
+
+    for (var i = 0; i < images.length; i++) {
+      images[i].classList.remove('active'); 
+    }
+    link.classList.add('active');
+
+    const description = document.getElementById('description');
+    description.style.display = 'block'; 
+
+    document.getElementById('displayedImage').style.display = 'none';
+  }
+</script>
 </body>
 </html>

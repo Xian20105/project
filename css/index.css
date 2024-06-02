@@ -38,20 +38,6 @@
 .text{
   text-align: center;
 }
-.menu{
-  width:100%;
-  height:70%;
-  display: flex;
-  justify-content: center;   
-  align-items: center;
-}
-.menu>li{
-  padding:0.6em;
-  color:black;
-}
-.menu>li>a>span:hover{
-  color:#803705;
-}
 .textInfo{
   color:white;
   font-size: 1em;
@@ -83,7 +69,7 @@ display: flex;
 flex-direction: column;
 }
 .sectionContainer{
-  padding:2em 0em;
+  padding:1em 0em;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -121,13 +107,43 @@ p{
   margin-bottom: 1.3em;
 }
 .nav>li>a>span{
-color: #803705;
-font-size:14px;
+  color: #803705;
+  font-size:14px;
 }
 .logoContainer{
-text-align: center;
+  text-align: center;
 }
 .iconContainer{
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
+}
+.drop-down-menu{
+  width:100%;
+  height:70%;
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+}
+.drop-down-menu>li>a{
+  padding:0.6em;
+  color:black;
+  display: flex;
+  align-items: center;
+}
+.drop-down-menu>li>a:hover{
+  color:#803705;
+}
+ul.drop-down-menu ul {
+  width:100%;
+  display: none;
+  position: absolute; 
+  background-color: white;
+  padding: 10px;
+  line-height:2em;
+}
+ul.drop-down-menu li {
+  position: relative; 
+}
+ul.drop-down-menu li:hover > ul {
+  display: block;
 }

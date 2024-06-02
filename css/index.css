@@ -135,15 +135,18 @@ p{
 }
 ul.drop-down-menu ul {
   width:100%;
-  display: none;
+  opacity: 0;
   position: absolute; 
   background-color: white;
-  padding: 10px;
-  line-height:2em;
+  padding: 20px;
+  line-height:2.5em;
+  max-height: 0;
+  transition: 0.3s;
 }
 ul.drop-down-menu li {
   position: relative; 
 }
 ul.drop-down-menu li:hover > ul {
-  display: block;
+  opacity: 1;
+  max-height: 300px;
 }

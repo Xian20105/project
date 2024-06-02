@@ -4,63 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>project</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
 </head>
 <body>
-  <div class="bannerContainer">
-    <div class="textBox">
+  <div class="bannerInfo">
+    <div class="infoBoxA">
+    <div class="infoBox">
       <div class="text">
         <H1>
-          <span class="textA">MEMBER'S EVENT</span>
+          <span class="textInfo">MEMBER'S EVENT</span>
         </H1>
-        <H2>
-          <span class="textB">會員互動</span>
-        </H2>
       </div>
     </div>
 </div>
+  <div class="bannerContainer">
+    <div class="textBox">
+      <div class="text">
+        <ul class="nav">
+          <li>
+            <a href="#">
+              <span>找商品</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>聯絡我們</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>會員登入</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span>購物車</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</div>
+<div class="logoContainer"><img src="img/logo.png"></div>
 <section class="panels">
   <div class="sectionContainer">
-    <ul class="nav">
+    <ul class="menu">
       <li>
-        <a href="#" class="active"onclick="changeImage('img/bread.jpg', this)">
-          <span>會員獨享</span>
+        <a>
+          <span>官網首頁</span>
         </a>
       </li>
       <li>
-        <a href="#" onclick="changeImage('img/caesar.jpg', this)">
-          <span>桌曆兌換</span>
+        <a>
+          <span class="iconContainer">所有商品
+            <span class="material-symbols-outlined">keyboard_arrow_down </span>
+          </span>
         </a>
       </li>
       <li>
-        <a href="#" onclick="showDescription(this)">
-          <span>會員權益說明</span>
+        <a>
+          <span>消費者評價</span>
         </a>
       </li>
       <li>
         <a href="">
-          <span>回收做公益</span>
+          <span>COFFEE小學堂</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span>商業合作</span>
         </a>
       </li>
     </ul>
   </div>
-  <div class="photoContainer">
-    <img id="displayedImage" src="img/cake-cover.jpg" alt="圖片讀取中">
+  <div class="carousel">
+    <img id="displayedImage" src="img/2160x.webp" alt="圖片讀取中">
   </div>
-  <div id="description">
-    <p>會員權益適用於商店服務及後續成立之網站、全台門市通路，以下稱「本服務」）
-    </p>
-    <p>
-      國際有限公司（以下稱「本公司」）所經營。
-    </p>
-    <p>本公司將根據以下之會員服務條款(以下簡稱本條款)，提供會員便利的交易。
-    </p>
-    <p>
-      為了保障您的權益，請務必詳讀本條款，在您註冊成為會員或開始使用本服務時，即視為您已經閱讀、瞭解並同意接受本條款及「隱私權政策」、「網站使用條款」之所有內容，
-    </p>
-    </div>
 </section>
-<script src="func01.js"></script>
+<script src="js/func01.js"></script>
 </body>
 </html>

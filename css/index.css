@@ -1,3 +1,8 @@
+body{
+  color:var(--page-text, #333);
+  font-size:calc(16px * var(--font-size-paragraph, 1));
+  box-sizing: border-box;
+}
 .bannerContainer{
   background-color: white;
   width:100%;
@@ -89,22 +94,15 @@ flex-direction: column;
 .nav>li>a>span:hover{
   color:rgb(202, 138, 0);
 }
-.carousel{
+#displayedImage{
   display: flex;
   justify-content: center;
   background-color: rgb(66, 36, 36);
   width:100%;
-  height:100vh;
+  height:100%;
 }
-#description {
-  width: 50%;
-  display: none;
-  font-weight: 400;
-  color: #777;
-  margin:0 auto;
-}
-p{
-  margin-bottom: 1.3em;
+.text > p{
+  margin-bottom: 1em;
 }
 .nav>li>a>span{
   color: #803705;
@@ -149,4 +147,88 @@ ul.drop-down-menu li {
 ul.drop-down-menu li:hover > ul {
   opacity: 1;
   max-height: 300px;
+}
+.sectionCategory{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  padding:13px;
+}
+.categoryContainer{
+  padding:15px 15px 5px 15px;
+}
+.categoryTitle{
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 24px;
+  font-weight:400;
+  margin: 20px;
+  color: rgba(0, 0, 0, 0.753);
+}
+.categoryItemContainer{
+  box-sizing: border-box;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  margin: auto;
+  padding:5px;
+}
+.categoryItemContainer > a{
+  padding:10px;
+}
+.categoryItemLogo{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.categoryItemLogo > p{
+  padding:15px 0px 0px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight:600;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding:15px;
+}
+.textButtonContainer{
+  display:flex;
+  justify-content: center;
+  padding:15px;
+}
+.textButton{
+  display:flex;
+  justify-content: center;
+  background-color: #803705;
+  color: white;
+  width:300px;
+  height:40px;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: calc(1rem * var(--font-size-paragraph, 1));
+}
+.textButton:hover{
+  background-color: white;
+  border: 1px solid #803705;
+  color: #803705;
+  cursor: pointer;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.sectionProduct{
+  display: flex;
+  justify-content: center;
+}
+.productTitle{
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: calc(1.5rem * var(--font-size-title, 1));
+  display: flex;
+  align-items: center;
+}
+.sectionProduct{
+  padding:1em 1em;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }

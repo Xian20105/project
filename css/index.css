@@ -155,14 +155,14 @@ ul.drop-down-menu li:hover > ul {
   padding:13px;
 }
 .categoryContainer{
-  padding:15px 15px 5px 15px;
+  padding-top:15px;
 }
 .categoryTitle{
   text-align: center;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 24px;
   font-weight:400;
-  margin: 20px;
+  margin-top: 1em;
   color: rgba(0, 0, 0, 0.753);
 }
 .categoryItemContainer{
@@ -171,7 +171,7 @@ ul.drop-down-menu li:hover > ul {
   display:flex;
   justify-content: center;
   margin: auto;
-  padding:5px;
+  padding:1em;
 }
 .categoryItemContainer > a{
   padding:10px;
@@ -190,12 +190,12 @@ ul.drop-down-menu li:hover > ul {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding:15px;
+  padding:1em;
 }
 .textButtonContainer{
   display:flex;
   justify-content: center;
-  padding:15px;
+  padding:1em;
 }
 .textButton{
   display:flex;
@@ -231,4 +231,10 @@ ul.drop-down-menu li:hover > ul {
   width: 100%;
   display: flex;
   align-items: center;
+}
+@media (max-width: 768px){
+body{
+    color:var(--page-text, #333);
+    font-size:calc(12px * var(--font-size-paragraph, 1));
+}
 }

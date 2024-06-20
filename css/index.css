@@ -234,12 +234,33 @@ ul.drop-down-menu li:hover > ul {
   font-size: calc(1.5rem * var(--font-size-title, 1));
   display: flex;
   align-items: center;
+  padding:20px;
 }
 .sectionProduct{
   padding:1em 1em;
   width: 100%;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  padding:13px;
+}
+.productList{
+  max-width: 1080px;;
+  margin:auto;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+.productItem{
+  width:250px;
+  background-color: red;
+  height: 250px;
+  margin:10px;
+  cursor: pointer;
+}
+.productItem > img {
+  width:100%;
+  height: 100%;
 }
 @media (max-width: 768px){
 body{

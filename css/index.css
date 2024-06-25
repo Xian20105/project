@@ -245,18 +245,18 @@ ul.drop-down-menu li:hover > ul {
   padding:13px;
 }
 .productList{
-  max-width: 1080px;;
-  margin:auto;
-  display:flex;
-  flex-direction: row;
-  flex-wrap:wrap;
+  width: 90vw;
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 .productItem{
-  width:250px;
+  width: calc(25% - 20px);
   background-color: red;
-  height: 250px;
   margin:10px;
   cursor: pointer;
+  aspect-ratio: 1;
 }
 .productItem > img {
   width:100%;
@@ -266,6 +266,16 @@ ul.drop-down-menu li:hover > ul {
 body{
     color:var(--page-text, #333);
     font-size:calc(12px * var(--font-size-paragraph, 1));
+}
+.drop-down-menu>li>a{
+  padding:0.6em;
+  color:black;
+  display: flex;
+  align-items: center;
+}
+.material-symbols-outlined {
+  font-size: 4px; /* 未解決 */
+  color: #803705; 
 }
 .categoryItemContainer{
   display:grid;

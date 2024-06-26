@@ -273,9 +273,9 @@ body{
   display: flex;
   align-items: center;
 }
-.material-symbols-outlined {
-  font-size: 4px; /* 未解決 */
-  color: #803705; 
+
+#drop-down-icon{
+  font-size: 16px;
 }
 .categoryItemContainer{
   display:grid;
@@ -286,6 +286,10 @@ body{
 .categoryItemContainer > a{
   padding:0px;
 }
+.categoryItemLogo > p {
+  padding: 5px 0px 0px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
 }
 @media (max-width: 991px){
 }

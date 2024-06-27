@@ -247,12 +247,11 @@ ul.drop-down-menu li:hover > ul {
 .productList{
   width: 90vw;
   max-width: 1080px;
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
 }
 .productItem{
-  width: calc(25% - 20px);
+  width: calc(25%);
   padding:5px;
   cursor: pointer;
   aspect-ratio: 1;
@@ -278,13 +277,20 @@ body{
   padding:0.2em;
 }
 .drop-down-menu>li>ul{
-  padding:1em;
+  padding:1em 0.8em;
   color:black;
   align-items: center;
 }
-
 #drop-down-icon{
+  font-size: 18px;
+}
+.categoryTitle{
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 16px;
+  font-weight:400;
+  margin-top: 1em;
+  color: rgba(0, 0, 0, 0.753);
 }
 .categoryItemContainer{
   display:grid;
@@ -305,7 +311,6 @@ body{
   justify-content: center;
 }
 .productItem {
-  width: calc(50% - 30px);
+  width: calc(50%);
 }
-
 }

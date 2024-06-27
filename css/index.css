@@ -1,10 +1,6 @@
 * {
   box-sizing: border-box;
 }
-body{
-  color:var(--page-text, #333);
-  font-size:calc(16px * var(--font-size-paragraph, 1));
-}
 .bannerContainer{
   background-color: white;
   width:100%;
@@ -47,7 +43,7 @@ body{
 }
 .textInfo{
   color:white;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 700;
   font-family: 'arial', sans-serif;
 }
@@ -58,18 +54,6 @@ H1{
 H2{
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
-}
-.textA{
-  color:#999999;
-  font-size: 3.5em;
-  font-weight: 700;
-  font-family: 'arial', sans-serif;
-}
-.textB{
-  color:#ff8b00;
-  font-family: 'arial', sans-serif;
-  font-size: 2.9em;
-  font-weight: 700;
 }
 .panels{
 display: flex;
@@ -88,7 +72,7 @@ flex-direction: column;
 .nav>li>a{
   padding: 0 0.75em;
   line-height: 2.5em;
-  font-size:1.1em;
+  font-size:1.1rem;
   font-weight: 700;
   color: rgba(102, 102, 102, 0.85);
   text-decoration:none;
@@ -108,7 +92,7 @@ flex-direction: column;
 }
 .nav>li>a>span{
   color: #803705;
-  font-size:14px;
+  font-size:1rem;
 }
 .logoContainer{
   text-align: center;
@@ -162,8 +146,7 @@ ul.drop-down-menu li:hover > ul {
 .categoryTitle{
   text-align: center;
   font-family: "Noto Sans TC", sans-serif;
-  font-size: 24px;
-  font-weight:400;
+  font-size: calc(1.3rem * var(--font-size-title, 1));
   margin-top: 1em;
   color: rgba(0, 0, 0, 0.753);
 }
@@ -231,7 +214,7 @@ ul.drop-down-menu li:hover > ul {
 }
 .productTitle{
   font-family: "Noto Sans TC", sans-serif;
-  font-size: calc(1.5rem * var(--font-size-title, 1));
+  font-size: calc(1.3rem * var(--font-size-title, 1));
   display: flex;
   align-items: center;
   padding:20px;
@@ -261,12 +244,12 @@ ul.drop-down-menu li:hover > ul {
   height: 100%;
 }
 @media (max-width: 768px){
-body{
-    color:var(--page-text, #333);
-    font-size:calc(12px * var(--font-size-paragraph, 1));
-}
 .sectionContainer{
   padding:1em 1em;
+}
+.nav>li>a>span{
+  color: #803705;
+  font-size:0.8rem;
 }
 .drop-down-menu>li>{
   padding:1em;
@@ -275,8 +258,10 @@ body{
 }
 .drop-down-menu>li>a{
   padding:0.2em;
+  font-size: calc(0.8rem * var(--font-size-title, 1));
 }
 .drop-down-menu>li>ul{
+  font-size: calc(0.8rem * var(--font-size-title, 1));
   padding:1em 0.8em;
   color:black;
   align-items: center;
@@ -287,7 +272,7 @@ body{
 .categoryTitle{
   text-align: center;
   font-family: "Noto Sans TC", sans-serif;
-  font-size: 16px;
+  font-size: calc(1rem * var(--font-size-title, 1));
   font-weight:400;
   margin-top: 1em;
   color: rgba(0, 0, 0, 0.753);
@@ -305,6 +290,18 @@ body{
   padding: 5px 0px 0px;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 400;
+  font-size:0.8rem;
+  height: 100%;
+}
+.text{
+  font-size:0.8rem;
+}
+.productTitle{
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: calc(1rem * var(--font-size-title, 1));
+  display: flex;
+  align-items: center;
+  padding:20px;
 }
 .productList{
   display: flex;
@@ -313,4 +310,5 @@ body{
 .productItem {
   width: calc(50%);
 }
+
 }

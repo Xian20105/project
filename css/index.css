@@ -37,6 +37,7 @@
   display: flex;
   justify-content: end;   
   align-items: center;
+  float:ri
 }
 .text{
   text-align: center;
@@ -185,7 +186,7 @@ ul.drop-down-menu li:hover > ul {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding:1em;
+  padding:0rem 1em;
 }
 .textButtonContainer{
   display:flex;

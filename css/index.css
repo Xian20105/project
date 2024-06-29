@@ -94,6 +94,9 @@ flex-direction: column;
   color: #803705;
   font-size:1rem;
 }
+#menu-icon{
+  display: none;
+}
 .logoContainer{
   text-align: center;
 }
@@ -251,14 +254,20 @@ ul.drop-down-menu li:hover > ul {
   color: #803705;
   font-size:0.8rem;
 }
+.nav{
+  display: none;
+}
+#menu-icon{
+  display: block;
+}
 .drop-down-menu>li>{
   padding:1em;
   color:black;
   align-items: center;
 }
 .drop-down-menu>li>a{
-  padding:0.2em;
-  font-size: calc(0.8rem * var(--font-size-title, 1));
+  padding:0.5em;
+  font-size: calc(0.75rem * var(--font-size-title, 1));
 }
 .drop-down-menu>li>ul{
   font-size: calc(0.8rem * var(--font-size-title, 1));

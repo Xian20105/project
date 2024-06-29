@@ -247,9 +247,6 @@ ul.drop-down-menu li:hover > ul {
   height: 100%;
 }
 @media (max-width: 768px){
-.sectionContainer{
-  padding:1em 1em;
-}
 .nav>li>a>span{
   color: #803705;
   font-size:0.8rem;
@@ -266,7 +263,7 @@ ul.drop-down-menu li:hover > ul {
   align-items: center;
 }
 .drop-down-menu>li>a{
-  padding:0.5em;
+  padding:0.2em;
   font-size: calc(0.75rem * var(--font-size-title, 1));
 }
 .drop-down-menu>li>ul{

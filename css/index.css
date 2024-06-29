@@ -268,7 +268,7 @@ ul.drop-down-menu li:hover > ul {
 }
 .drop-down-menu>li>ul{
   font-size: calc(0.8rem * var(--font-size-title, 1));
-  padding:1em 0.8em;
+  padding:0.6rem 0.6rem;
   color:black;
   align-items: center;
 }
